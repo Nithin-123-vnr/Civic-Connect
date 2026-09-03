@@ -1,0 +1,196 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"surface-tint":"#455f88","surface-container-highest":"#e3e2e6","primary":"#002045","on-primary":"#ffffff","surface-container-high":"#e9e7eb","tertiary-fixed":"#ffddba","primary-container":"#1a365d","surface-bright":"#faf9fd","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#633f0f","outline-variant":"#c4c6cf","outline":"#74777f","on-secondary-container":"#00477f","primary-fixed":"#d6e3ff","on-tertiary":"#ffffff","surface":"#faf9fd","tertiary-fixed-dim":"#f2bc82","inverse-surface":"#2f3033","surface-variant":"#e3e2e6","on-secondary":"#ffffff","surface-container-low":"#f4f3f7","on-primary-container":"#86a0cd","on-error":"#ffffff","inverse-on-surface":"#f1f0f4","surface-dim":"#dad9dd","on-tertiary-fixed":"#2b1700","on-primary-fixed":"#001b3c","inverse-primary":"#adc7f7","secondary":"#1960a3","secondary-container":"#7db6ff","secondary-fixed-dim":"#a2c9ff","on-surface":"#1a1c1e","on-secondary-fixed":"#001c38","tertiary-container":"#4f2e00","surface-container":"#efedf1","on-error-container":"#93000a","on-secondary-fixed-variant":"#004881","on-background":"#1a1c1e","primary-fixed-dim":"#adc7f7","background":"#faf9fd","on-tertiary-container":"#c6955e","on-surface-variant":"#43474e","tertiary":"#321b00","secondary-fixed":"#d3e4ff","error":"#ba1a1a","on-primary-fixed-variant":"#2d476f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"unit":"8px","container-max":"1280px","margin-mobile":"16px","touch-target-min":"44px","gutter":"24px"},"fontFamily":{"label-md":["Inter"],"caption":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"]},"fontSize":{"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col border-r border-outline-variant shadow-[1px_0_0_rgba(0,0,0,0.02)]"><div class="px-unit px-gutter py-8 flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[32px]">account_balance</span><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-tight">CivicConnect</span><span class="font-caption text-caption text-on-surface-variant">District Portal</span></div></div><nav class="flex-1 px-4 space-y-1 overflow-y-auto" data-active-classes="bg-primary text-on-primary shadow-sm"><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="complaints" href="#"><span class="material-symbols-outlined mr-3">assignment</span><span class="font-label-md text-label-md">Complaints</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="map-view" href="#"><span class="material-symbols-outlined mr-3">map</span><span class="font-label-md text-label-md">Map View</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined mr-3">analytics</span><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mandal-performance" href="#"><span class="material-symbols-outlined mr-3">domain</span><span class="font-label-md text-label-md">Mandal Performance</span></a><a aria-current="page" class="flex items-center h-[44px] px-4 rounded-xl transition-all bg-primary text-on-primary shadow-sm" data-path="escalations" href="#"><span class="material-symbols-outlined mr-3">error</span><span class="font-label-md text-label-md">Escalations</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-3">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><a class="flex items-center h-[44px] px-4 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined mr-3">person</span><span class="font-label-md text-label-md">Profile</span></a></nav><div class="px-4 py-6 border-t border-outline-variant"><div class="bg-surface-container-high p-4 rounded-xl flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="overflow-hidden"><p class="font-label-md text-label-md text-on-surface truncate">D. Officer</p><p class="font-caption text-caption text-on-surface-variant truncate">Admin ID: 8821</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-md z-40 px-gutter flex items-center justify-between border-b border-outline-variant"><div class="flex items-center gap-4"><div class="flex flex-col"><span class="font-label-md text-label-md text-primary uppercase tracking-widest">Reporting Area</span><span class="font-headline-md text-headline-md text-on-surface">Rangareddy District</span></div></div><div class="flex items-center gap-6"><div class="relative flex items-center bg-surface-container-high rounded-full px-4 h-11 w-96"><span class="material-symbols-outlined text-outline">search</span><input class="bg-transparent border-none focus:ring-0 text-body-md w-full ml-2 outline-none text-on-surface" placeholder="Search complaints, Mandals..." type="text"/></div><div class="flex items-center gap-3"><button class="w-11 h-11 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">help</span></button><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 min-h-screen bg-surface"><div class="flex flex-col w-full h-full relative">
+<!-- Gradient Ambient Background -->
+<div class="absolute inset-0 bg-gradient-to-br from-surface via-surface-bright to-surface -z-10"></div>
+<div class="px-gutter py-8">
+<!-- Header Section -->
+<div class="flex items-center justify-between mb-8">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">Escalation Matrix</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Critical issues requiring immediate district-level intervention. Review long-pending cases and recurring infrastructural failures across mandals.
+        </p>
+</div>
+<div class="flex gap-4">
+<div class="bg-error-container text-on-error-container px-4 py-3 rounded-xl flex items-center shadow-sm">
+<span class="material-symbols-outlined mr-2">warning</span>
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase tracking-wider opacity-80">Critical</span>
+<span class="font-headline-md text-headline-md leading-none">12</span>
+</div>
+</div>
+<div class="bg-tertiary-container text-on-tertiary-container px-4 py-3 rounded-xl flex items-center shadow-sm">
+<span class="material-symbols-outlined mr-2">schedule</span>
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase tracking-wider opacity-80">SLA Breach</span>
+<span class="font-headline-md text-headline-md leading-none">8</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Visualization / Overview Bento -->
+<div class="grid grid-cols-12 gap-gutter mb-12">
+<!-- Chart Card -->
+<div class="col-span-8 bg-surface-container shadow-md rounded-2xl p-6 relative overflow-hidden group">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl transition-transform duration-700 group-hover:scale-110"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary">trending_up</span>
+            Escalation Trends (30 Days)
+         </h2>
+<div class="h-48 w-full flex items-end gap-2 px-2">
+<!-- Simulated Bar Chart -->
+<div class="flex-1 bg-primary/20 rounded-t-lg h-[30%] relative group/bar cursor-pointer transition-all hover:bg-primary/40"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">12</div></div>
+<div class="flex-1 bg-primary/30 rounded-t-lg h-[45%] relative group/bar cursor-pointer transition-all hover:bg-primary/50"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">18</div></div>
+<div class="flex-1 bg-primary/20 rounded-t-lg h-[25%] relative group/bar cursor-pointer transition-all hover:bg-primary/40"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">10</div></div>
+<div class="flex-1 bg-primary/40 rounded-t-lg h-[60%] relative group/bar cursor-pointer transition-all hover:bg-primary/60"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">24</div></div>
+<div class="flex-1 bg-error/40 rounded-t-lg h-[85%] relative group/bar cursor-pointer transition-all hover:bg-error/60"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">35</div></div>
+<div class="flex-1 bg-error/60 rounded-t-lg h-[100%] relative group/bar cursor-pointer transition-all hover:bg-error/80"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">42</div></div>
+<div class="flex-1 bg-primary/50 rounded-t-lg h-[75%] relative group/bar cursor-pointer transition-all hover:bg-primary/70"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface text-caption px-2 py-1 rounded font-caption pointer-events-none">30</div></div>
+</div>
+<div class="flex justify-between mt-4 border-t border-outline-variant/30 pt-2 font-caption text-caption text-on-surface-variant">
+<span>Week 1</span>
+<span>Week 2</span>
+<span>Week 3</span>
+<span>Current Week</span>
+</div>
+</div>
+<!-- Key Focus Area Image -->
+<div class="col-span-4 bg-surface-container shadow-md rounded-2xl overflow-hidden relative group">
+<div class="bg-cover bg-center w-full h-full absolute inset-0 opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A high contrast overhead view of a modern water treatment facility in a developing region, showcasing large circular reservoirs and concrete infrastructure, harsh midday lighting, emphasizing the critical nature of civil engineering works, muted tones of concrete and deep blue water with subtle industrial orange accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRVC1HdKwJjl1PQ0JFxNpkvkFTzlQoPs8qegXjcaR03WtFotXlamAS-JkMPtZa2wDsYzw-tOH2ASoCFGqIVYDmc3VLIsJWka71rSa8GPscHl4KT00i8NCO0ngB9hw9TrTY63BjLR9dxqZ43tMumtT3BOWEycttQHKoFdtSGjArVDAHIpnqfNa6eCAnyk8b7Q92HCxiOOEUY0RXVmMjCKvZuIX81fiZtKcM98iP17TmdnG8zC5RZkYnXA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<span class="inline-block bg-error text-on-error px-2 py-1 rounded-sm font-label-md text-label-md uppercase tracking-wider mb-2">Priority Focus</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary leading-tight mb-2">Water Infra. Failures</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim line-clamp-2">Significant spike in unresolved pipeline bursts reported in Shamshabad Mandal over the last 72 hours.</p>
+</div>
+</div>
+</div>
+<!-- Controls -->
+<div class="flex justify-between items-center mb-6">
+<div class="flex gap-2">
+<button class="bg-primary text-on-primary px-6 h-[44px] rounded-full font-label-md text-label-md shadow-sm transition-transform active:scale-95 flex items-center">
+            All Escalations
+         </button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-highest px-6 h-[44px] rounded-full font-label-md text-label-md shadow-sm transition-colors flex items-center">
+            SLA Breached
+         </button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-highest px-6 h-[44px] rounded-full font-label-md text-label-md shadow-sm transition-colors flex items-center">
+            Recurring
+         </button>
+</div>
+<div class="flex gap-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">filter_list</span>
+<select class="appearance-none bg-surface-container text-on-surface pl-10 pr-8 h-[44px] rounded-xl font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary shadow-sm cursor-pointer">
+<option>Sort by Severity</option>
+<option>Sort by Age</option>
+<option>Sort by Mandal</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Data List -->
+<div class="bg-surface-container-lowest shadow-lg rounded-2xl overflow-hidden flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-4 px-6 py-4 bg-surface-container-low border-b border-outline-variant font-label-md text-label-md text-on-surface uppercase tracking-wider sticky top-20 z-10">
+<div class="col-span-2">Issue ID</div>
+<div class="col-span-2">Mandal</div>
+<div class="col-span-4">Reason for Escalation</div>
+<div class="col-span-2">Age</div>
+<div class="col-span-2 text-right">Action</div>
+</div>
+<!-- List Items -->
+<div class="divide-y divide-outline-variant/50">
+<!-- Item 1 (Critical) -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-bright transition-colors group">
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">#9284A</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-error block"></span> High Priority
+            </span>
+</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface">
+            Shamshabad
+          </div>
+<div class="col-span-4 pr-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1 truncate">Main Water Pipeline Burst</h4>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">SLA Breached by 48hrs. Major flooding reported in residential zone. Initial response delayed due to equipment failure.</p>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-error">5 Days</span>
+<span class="font-caption text-caption text-on-surface-variant">SLA: 24hrs</span>
+</div>
+<div class="col-span-2 flex justify-end gap-2">
+<button class="w-11 h-[44px] rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors tooltip-trigger" data-tooltip="View History">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="px-4 h-[44px] rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center shadow-sm">
+               Intervene
+            </button>
+</div>
+</div>
+<!-- Item 2 (Recurring) -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-bright transition-colors group">
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">#8102B</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-tertiary block"></span> Recurring
+            </span>
+</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface">
+            Kondapur
+          </div>
+<div class="col-span-4 pr-4">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-label-md text-label-md text-on-surface truncate">Streetlight Network Failure</h4>
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] uppercase font-bold px-1.5 py-0.5 rounded">3rd Time</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">Reopened for the 3rd time this month. Temporary fixes applied previously failed after heavy rain.</p>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">12 Days</span>
+<span class="font-caption text-caption text-on-surface-variant">Active</span>
+</div>
+<div class="col-span-2 flex justify-end gap-2">
+<button class="w-11 h-[44px] rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="px-4 h-[44px] rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center shadow-sm">
+               Intervene
+            </button>
+</div>
+</div>
+<!-- Item 3 (Stalled) -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-bright transition-colors group">
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">#7739F</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-outline block"></span> Stalled
+            </span>
+</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface">
+            Gachibowli
+          </div>
+<div class="col-span-4 pr-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1 truncate">Road Subsidence (Phase 2)</h4>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">Awaiting municipal clearance for digging. No update from local contractor in 14 days. Traffic rerouted temporarily.</p>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-headline-md text-headline-md text-tertiary">21 Days</span>
+<span class="font-caption text-caption text-on-surface-variant">Stagnant</span>
+</div>
+<div class="col-span-2 flex justify-end gap-2">
+<button class="w-11 h-[44px] rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="px-4 h-[44px] rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center shadow-sm">
+               Intervene
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

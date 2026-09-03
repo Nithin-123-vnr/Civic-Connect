@@ -1,0 +1,88 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#2f3033", "surface-variant": "#e3e2e6", "on-primary-fixed-variant": "#2d476f", "background": "#faf9fd", "on-surface": "#1a1c1e", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "surface": "#faf9fd", "on-error": "#ffffff", "error": "#ba1a1a", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#004881", "on-primary-container": "#86a0cd", "on-background": "#1a1c1e", "primary-fixed-dim": "#adc7f7", "surface-container": "#efedf1", "primary": "#002045", "surface-container-low": "#f4f3f7", "on-tertiary": "#ffffff", "tertiary": "#321b00", "primary-container": "#1a365d", "surface-container-high": "#e9e7eb", "on-surface-variant": "#43474e", "on-secondary-container": "#00477f", "on-tertiary-fixed": "#2b1700", "secondary-fixed-dim": "#a2c9ff", "outline": "#74777f", "tertiary-container": "#4f2e00", "surface-bright": "#faf9fd", "surface-tint": "#455f88", "secondary-fixed": "#d3e4ff", "on-secondary": "#ffffff", "secondary-container": "#7db6ff", "surface-dim": "#dad9dd", "inverse-on-surface": "#f1f0f4", "on-secondary-fixed": "#001c38", "on-tertiary-container": "#c6955e", "on-primary-fixed": "#001b3c", "tertiary-fixed-dim": "#f2bc82", "secondary": "#1960a3", "inverse-primary": "#adc7f7", "outline-variant": "#c4c6cf", "surface-container-highest": "#e3e2e6", "tertiary-fixed": "#ffddba", "on-tertiary-fixed-variant": "#633f0f", "on-primary": "#ffffff", "primary-fixed": "#d6e3ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "touch-target-min": "44px", "gutter": "24px", "container-max": "1280px", "margin-mobile": "16px", "unit": "8px" }, "fontFamily": { "label-md": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-xl": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }] } } } }</script><style>@layer base { body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom); } .pt-safe { padding-top: env(safe-area-inset-top); } } .no-scrollbar::-webkit-scrollbar { display: none; }</style></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 flex items-center justify-between px-margin-mobile"><div class="flex items-center gap-unit"><img alt="CivicConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMxfIR9geNl5U4C6nCNm8ui4j6p7MrzxBs65Ed2WNHmJrhH4kscgrP67tT2nGkL75rDFH1hmlDepae2AcPTdORiaOic8l1AH_yynUe6wa7PgU_zPnu25merMSCjn0fmeY04An9wXF1iHDccd1kojLLBSsolCjOwqEV89r67Cq5uOS96W-oxAEOZe6MZxBRw4UiTNbEWJ1juWBe-NkJAi8pARXU4XTAHoyPllVcUPiEKd1aC-5q2Yv7UQ"/><span class="font-headline-md text-headline-md text-primary hidden xs:block">CivicConnect</span></div><div class="flex-1 flex justify-center"><button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">location_on</span><span class="font-label-md text-label-md truncate max-w-[100px]">Downtown</span><span class="material-symbols-outlined text-[18px]">expand_more</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="pt-16 bg-surface min-h-screen pb-32"><div class="flex flex-col w-full h-[calc(100vh-128px)] justify-center px-margin-mobile relative overflow-hidden">
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const retryBtn = document.getElementById('retry-btn');
+      const radarLines = document.querySelectorAll('.radar-line');
+      const marker = document.getElementById('location-marker');
+      
+      retryBtn.addEventListener('click', () => {
+        // Add loading state
+        retryBtn.innerHTML = '<span class="material-symbols-outlined animate-spin mr-2">refresh</span> Detecting...';
+        retryBtn.classList.add('opacity-80', 'pointer-events-none');
+        
+        // Animate marker
+        marker.classList.add('animate-bounce');
+        marker.classList.replace('text-error', 'text-primary');
+        
+        // Animate radar rings
+        radarLines.forEach((line, index) => {
+           line.style.animation = `ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite ${index * 0.3}s`;
+           line.classList.replace('border-error/20', 'border-primary/30');
+        });
+
+        // Simulate failure again after 2.5s for demo purposes
+        setTimeout(() => {
+          retryBtn.innerHTML = 'Retry Detection';
+          retryBtn.classList.remove('opacity-80', 'pointer-events-none');
+          marker.classList.remove('animate-bounce');
+          marker.classList.replace('text-primary', 'text-error');
+          
+          radarLines.forEach(line => {
+             line.style.animation = 'none';
+             line.classList.replace('border-primary/30', 'border-error/20');
+          });
+          
+          // Shake error animation
+          const container = document.getElementById('error-container');
+          container.classList.add('animate-[shake_0.5s_ease-in-out]');
+          setTimeout(() => container.classList.remove('animate-[shake_0.5s_ease-in-out]'), 500);
+        }, 2500);
+      });
+    });
+  </script>
+<style>
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-4px); }
+      40%, 80% { transform: translateX(4px); }
+    }
+  </style>
+<!-- Ambient Background Pattern -->
+<div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: radial-gradient(var(--tw-colors-on-background) 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="flex flex-col items-center text-center z-10 w-full max-w-sm mx-auto" id="error-container">
+<!-- Animated Illustration Area -->
+<div class="relative w-48 h-48 mb-8 flex items-center justify-center">
+<!-- Radar Rings -->
+<div class="radar-line absolute w-full h-full rounded-full border-2 border-error/20 opacity-0 transition-colors duration-300"></div>
+<div class="radar-line absolute w-3/4 h-3/4 rounded-full border-2 border-error/20 opacity-0 transition-colors duration-300"></div>
+<div class="radar-line absolute w-1/2 h-1/2 rounded-full border-2 border-error/20 opacity-0 transition-colors duration-300"></div>
+<!-- Central Marker Background -->
+<div class="absolute w-20 h-20 bg-error-container rounded-full flex items-center justify-center">
+<!-- Broken Location Icon -->
+<div class="relative">
+<span class="material-symbols-outlined text-[48px] text-error transition-colors duration-300" id="location-marker" style="font-variation-settings: 'FILL' 1;">location_off</span>
+</div>
+</div>
+</div>
+<!-- Text Content -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3">Location Detection Failed</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 px-4">
+      We couldn't detect your current GPS location. Please check your signal or try again.
+    </p>
+<!-- Actions -->
+<div class="flex flex-col w-full gap-3">
+<button class="w-full min-h-[touch-target-min] bg-primary text-on-primary font-label-md text-label-md rounded-xl flex items-center justify-center transition-all active:scale-[0.98]" id="retry-btn">
+        Retry Detection
+      </button>
+<button class="w-full min-h-[touch-target-min] bg-transparent text-primary font-label-md text-label-md rounded-xl flex items-center justify-center border-2 border-primary/20 hover:border-primary/40 transition-all active:bg-primary/5">
+        Select Location Manually
+      </button>
+</div>
+<!-- Troubleshooting Link -->
+<a class="mt-8 font-label-md text-label-md text-secondary underline decoration-secondary/30 underline-offset-4 flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">help</span>
+      Why is my location not working?
+    </a>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-16 px-4"><a class="flex flex-col items-center justify-center min-w-[touch-target-min] text-on-surface-variant" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="font-caption text-caption">Home</span></a><a class="flex flex-col items-center justify-center min-w-[touch-target-min] text-on-surface-variant" data-path="my-complaints" href="#"><span class="material-symbols-outlined">assignment</span><span class="font-caption text-caption">Complaints</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[touch-target-min] text-primary font-bold" data-path="map" href="#"><span class="material-symbols-outlined">map</span><span class="font-caption text-caption">Map</span></a><a class="flex flex-col items-center justify-center min-w-[touch-target-min] text-on-surface-variant" data-path="notifications" href="#"><span class="material-symbols-outlined">notifications</span><span class="font-caption text-caption">Alerts</span></a><a class="flex flex-col items-center justify-center min-w-[touch-target-min] text-on-surface-variant" data-path="profile" href="#"><span class="material-symbols-outlined">person</span><span class="font-caption text-caption">Profile</span></a></div></nav></body></html>

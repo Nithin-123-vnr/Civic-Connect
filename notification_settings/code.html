@@ -1,0 +1,195 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#f2bc82", "surface-dim": "#dad9dd", "secondary-container": "#7db6ff", "surface-bright": "#faf9fd", "on-secondary-fixed": "#001c38", "tertiary": "#321b00", "on-primary-container": "#86a0cd", "on-primary-fixed": "#001b3c", "on-secondary": "#ffffff", "inverse-primary": "#adc7f7", "outline-variant": "#c4c6cf", "surface-container-high": "#e9e7eb", "error": "#ba1a1a", "on-background": "#1a1c1e", "on-secondary-fixed-variant": "#004881", "on-error-container": "#93000a", "on-secondary-container": "#00477f", "secondary-fixed-dim": "#a2c9ff", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffddba", "surface-container-low": "#f4f3f7", "secondary-fixed": "#d3e4ff", "surface-container-highest": "#e3e2e6", "on-tertiary-container": "#c6955e", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-on-surface": "#f1f0f4", "tertiary-container": "#4f2e00", "primary-fixed-dim": "#adc7f7", "surface": "#faf9fd", "secondary": "#1960a3", "surface-tint": "#455f88", "background": "#faf9fd", "primary": "#002045", "primary-fixed": "#d6e3ff", "error-container": "#ffdad6", "surface-variant": "#e3e2e6", "on-surface": "#1a1c1e", "on-tertiary-fixed-variant": "#633f0f", "on-tertiary-fixed": "#2b1700", "primary-container": "#1a365d", "on-primary-fixed-variant": "#2d476f", "inverse-surface": "#2f3033", "on-tertiary": "#ffffff", "surface-container": "#efedf1", "on-surface-variant": "#43474e", "outline": "#74777f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "24px", "unit": "8px", "touch-target-min": "44px", "container-max": "1280px", "margin-mobile": "16px" }, "fontFamily": { "headline-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "label-md": ["Inter"], "caption": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }], "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script><style>@layer base { body { -webkit-tap-highlight-color: transparent; } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } }</style></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-4 flex items-center gap-unit"><button class="w-touch-target-min h-touch-target-min flex items-center justify-center text-on-surface" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><div class="flex items-center gap-2"><img alt="CivicConnect logo" class="h-6 w-auto opacity-80" src="https://lh3.googleusercontent.com/aida/AEtjO1VGVRu8vrSgvVkzVpdswbSQLQd5pBe6-bnCOrBxIaJfolrlnPMXvfH2jUDudDjwZwCI7C3rv5U_ccj10vb4KZi2q2u1RGoGZbvh6otN2MjZsXtHYfwnsninrsI8jF1MZQM9vcUUkPHMjx72zYG5mPwK65r_pbG6vbZRFX1DA2HF-0VGLjHA1kK83EZxAXJXYR9gewBezkeX7Tl_8YXvr4KpyiPPwsx-_SAs_WYajAHH2aDfF2q_-_YEZPLT"/><h1 class="font-headline-md text-headline-md text-on-surface">Notification Settings</h1></div></div></header><main class="relative w-full pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full pb-gutter">
+<div class="px-gutter pt-unit pb-gutter space-y-gutter">
+<!-- Complaint Notifications -->
+<section class="bg-surface-container rounded-xl shadow-sm overflow-hidden">
+<div class="px-margin-mobile py-unit bg-primary-container text-on-primary-container">
+<h2 class="font-headline-md text-headline-md-mobile flex items-center gap-unit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">report</span>
+          Complaint Updates
+        </h2>
+<p class="font-body-md text-on-primary-container/80 mt-1">Get notified about the status of your reported issues.</p>
+</div>
+<div class="p-margin-mobile flex flex-col gap-unit">
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Submitted</span>
+<span class="font-caption text-on-surface-variant">When your complaint is received</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Verified</span>
+<span class="font-caption text-on-surface-variant">When the issue is confirmed valid</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Assigned</span>
+<span class="font-caption text-on-surface-variant">When a team is assigned to the task</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Status Changes</span>
+<span class="font-caption text-on-surface-variant">Any general progress updates</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Work Started</span>
+<span class="font-caption text-on-surface-variant">When on-site work begins</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Resolved</span>
+<span class="font-caption text-on-surface-variant">When the issue is fixed</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Rejected</span>
+<span class="font-caption text-on-surface-variant">If the complaint cannot be addressed</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Escalated</span>
+<span class="font-caption text-on-surface-variant">If the issue requires higher authority</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface-variant after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:bg-on-primary peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Reopened</span>
+<span class="font-caption text-on-surface-variant">If a resolved issue needs more work</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- General Civic Updates -->
+<section class="bg-surface-container rounded-xl shadow-sm overflow-hidden">
+<div class="px-margin-mobile py-unit bg-secondary-container text-on-secondary-container">
+<h2 class="font-headline-md text-headline-md-mobile flex items-center gap-unit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">campaign</span>
+          General Civic Updates
+        </h2>
+<p class="font-body-md text-on-secondary-container/80 mt-1">Stay informed about your city.</p>
+</div>
+<div class="p-margin-mobile flex flex-col gap-unit">
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Local Announcements</span>
+<span class="font-caption text-on-surface-variant">Road closures, weather alerts, public events</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Community Updates</span>
+<span class="font-caption text-on-surface-variant">Newsletters and general city progress</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface-variant after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:bg-on-primary peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Delivery Preferences -->
+<section class="bg-surface-container rounded-xl shadow-sm overflow-hidden mb-gutter">
+<div class="px-margin-mobile py-unit bg-tertiary-container text-on-tertiary-container">
+<h2 class="font-headline-md text-headline-md-mobile flex items-center gap-unit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+          Delivery Preferences
+        </h2>
+<p class="font-body-md text-on-tertiary-container/80 mt-1">How you receive your notifications.</p>
+</div>
+<div class="p-margin-mobile flex flex-col gap-unit">
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Push Notifications</span>
+<span class="font-caption text-on-surface-variant">Alerts directly to your device</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Email</span>
+<span class="font-caption text-on-surface-variant">Detailed updates to your inbox</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+<!-- Toggle Item -->
+<label class="flex items-center justify-between p-unit rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer touch-action-manipulation min-h-[44px]">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">SMS / Text</span>
+<span class="font-caption text-on-surface-variant">Urgent alerts via text message</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface-variant after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:bg-on-primary peer-checked:bg-primary shadow-inner"></div>
+</div>
+</label>
+</div>
+</section>
+</div>
+</div></main></body></html>

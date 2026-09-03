@@ -1,0 +1,162 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;overflow-x:hidden;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#a2c9ff","tertiary-fixed-dim":"#f2bc82","primary-container":"#1a365d","on-primary-fixed":"#001b3c","inverse-surface":"#2f3033","secondary-fixed":"#d3e4ff","surface-bright":"#faf9fd","surface-container":"#efedf1","on-secondary-fixed-variant":"#004881","on-background":"#1a1c1e","on-primary-container":"#86a0cd","tertiary-container":"#4f2e00","surface-dim":"#dad9dd","surface-container-highest":"#e3e2e6","error-container":"#ffdad6","surface-container-lowest":"#ffffff","primary-fixed-dim":"#adc7f7",secondary:"#1960a3","on-secondary-container":"#00477f","tertiary-fixed":"#ffddba","on-surface-variant":"#43474e","inverse-on-surface":"#f1f0f4","surface-container-low":"#f4f3f7","on-secondary-fixed":"#001c38",outline:"#74777f","on-surface":"#1a1c1e",primary:"#002045","on-tertiary-fixed":"#2b1700","on-primary-fixed-variant":"#2d476f",error:"#ba1a1a",surface:"#faf9fd","on-error-container":"#93000a","on-secondary":"#ffffff","primary-fixed":"#d6e3ff","surface-container-high":"#e9e7eb","on-tertiary":"#ffffff","surface-tint":"#455f88","inverse-primary":"#adc7f7","on-primary":"#ffffff",tertiary:"#321b00","on-tertiary-fixed-variant":"#633f0f","outline-variant":"#c4c6cf","on-tertiary-container":"#c6955e","on-error":"#ffffff",background:"#faf9fd","surface-variant":"#e3e2e6","secondary-container":"#7db6ff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{unit:"8px",gutter:"24px","margin-mobile":"16px","container-max":"1280px","touch-target-min":"44px"},fontFamily:{"headline-lg-mobile":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Inter"],"headline-xl":["Inter"],"headline-lg":["Inter"],caption:["Inter"],"body-md":["Inter"]},fontSize:{"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-xl":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],caption:["12px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-4"><div class="flex items-center gap-4"><button class="w-touch-target-min h-touch-target-min flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><div class="flex items-center gap-2"><img alt="CivicConnect logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VGVRu8vrSgvVkzVpdswbSQLQd5pBe6-bnCOrBxIaJfolrlnPMXvfH2jUDudDjwZwCI7C3rv5U_ccj10vb4KZi2q2u1RGoGZbvh6otN2MjZsXtHYfwnsninrsI8jF1MZQM9vcUUkPHMjx72zYG5mPwK65r_pbG6vbZRFX1DA2HF-0VGLjHA1kK83EZxAXJXYR9gewBezkeX7Tl_8YXvr4KpyiPPwsx-_SAs_WYajAHH2aDfF2q_-_YEZPLT"/><span class="font-headline-md text-headline-md text-on-surface truncate">Profile Completion</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-safe">
+<div class="px-margin-mobile pt-8 pb-4 flex flex-col gap-2">
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Create Your Account</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Register to access citizen services and track your applications.</p>
+</div>
+<div class="px-margin-mobile py-4">
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault(); window.location.href='#';">
+<!-- Personal Information Section -->
+<div class="flex flex-col gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Personal Details</h2>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="fullName">Full Name <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">person</span>
+<input class="w-full min-h-[48px] pl-10 pr-4 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/50" id="fullName" name="fullName" placeholder="e.g. Jane Doe" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="mobile">Mobile Number <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">phone_iphone</span>
+<input class="w-full min-h-[48px] pl-10 pr-4 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/50" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="email">Email (Optional)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">mail</span>
+<input class="w-full min-h-[48px] pl-10 pr-4 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/50" id="email" name="email" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="password">Password <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">lock</span>
+<input class="w-full min-h-[48px] pl-10 pr-12 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/50" id="password" minlength="8" name="password" placeholder="Min. 8 characters" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-1 w-10 h-10 flex items-center justify-center text-on-surface-variant focus:outline-none focus:text-primary rounded-lg" type="button">
+<span class="material-symbols-outlined" id="togglePasswordIcon">visibility_off</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Location Section -->
+<div class="flex flex-col gap-4 pt-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Location</h2>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="state">State <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">map</span>
+<select class="w-full min-h-[48px] pl-10 pr-10 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2343474e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:24px] bg-[position:right_12px_center] bg-no-repeat" id="state" name="state" required="">
+<option disabled="" selected="" value="">Select State</option>
+<option value="state1">Andhra Pradesh</option>
+<option value="state2">Telangana</option>
+<option value="state3">Karnataka</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="district">District <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">location_city</span>
+<select class="w-full min-h-[48px] pl-10 pr-10 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2343474e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:24px] bg-[position:right_12px_center] bg-no-repeat disabled:opacity-50 disabled:bg-surface-variant" disabled="" id="district" name="district" required="">
+<option disabled="" selected="" value="">Select District</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="mandal">Mandal <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">maps_home_work</span>
+<select class="w-full min-h-[48px] pl-10 pr-10 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2343474e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:24px] bg-[position:right_12px_center] bg-no-repeat disabled:opacity-50 disabled:bg-surface-variant" disabled="" id="mandal" name="mandal" required="">
+<option disabled="" selected="" value="">Select Mandal</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1 group">
+<label class="font-label-md text-label-md text-on-surface group-focus-within:text-primary" for="village">Village / Local Area <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant pointer-events-none">home_pin</span>
+<select class="w-full min-h-[48px] pl-10 pr-10 bg-surface border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2343474e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:24px] bg-[position:right_12px_center] bg-no-repeat disabled:opacity-50 disabled:bg-surface-variant" disabled="" id="village" name="village" required="">
+<option disabled="" selected="" value="">Select Village</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Agreement & Actions -->
+<div class="flex flex-col gap-6 pt-4 mt-2 border-t border-surface-variant">
+<label class="flex items-start gap-3 cursor-pointer group min-h-[44px]">
+<div class="relative flex items-center justify-center w-6 h-6 mt-0.5">
+<input class="peer appearance-none w-6 h-6 border-2 border-outline rounded-sm bg-surface checked:bg-primary checked:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors cursor-pointer" required="" type="checkbox"/>
+<span class="material-symbols-outlined absolute text-on-primary text-[18px] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant select-none">
+            I agree to the <a class="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors" href="#">Terms of Service</a> and <a class="text-primary underline decoration-primary/30 hover:decoration-primary transition-colors" href="#">Privacy Policy</a>.
+          </span>
+</label>
+<button class="w-full min-h-[48px] bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-sm hover:shadow-md transition-shadow flex items-center justify-center gap-2 active:scale-[0.98]" type="submit">
+<span>Create Account</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="text-center pb-8">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Already have an account? 
+            <a class="text-primary font-label-md hover:underline" href="#">Login here</a>
+</p>
+</div>
+</div>
+</form>
+</div>
+<script>
+    // Password toggle
+    document.querySelector('button[aria-label="Toggle password visibility"]').addEventListener('click', function() {
+      const input = document.getElementById('password');
+      const icon = document.getElementById('togglePasswordIcon');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility_off';
+      }
+    });
+
+    // Cascading dropdowns mockup
+    const stateSelect = document.getElementById('state');
+    const districtSelect = document.getElementById('district');
+    const mandalSelect = document.getElementById('mandal');
+    const villageSelect = document.getElementById('village');
+
+    stateSelect.addEventListener('change', (e) => {
+      if(e.target.value) {
+        districtSelect.disabled = false;
+        districtSelect.innerHTML = '<option value="" disabled selected>Select District</option><option value="d1">District A</option><option value="d2">District B</option>';
+      } else {
+        districtSelect.disabled = true;
+        mandalSelect.disabled = true;
+        villageSelect.disabled = true;
+      }
+    });
+
+    districtSelect.addEventListener('change', (e) => {
+      if(e.target.value) {
+        mandalSelect.disabled = false;
+        mandalSelect.innerHTML = '<option value="" disabled selected>Select Mandal</option><option value="m1">Mandal X</option><option value="m2">Mandal Y</option>';
+      } else {
+        mandalSelect.disabled = true;
+        villageSelect.disabled = true;
+      }
+    });
+
+    mandalSelect.addEventListener('change', (e) => {
+      if(e.target.value) {
+        villageSelect.disabled = false;
+        villageSelect.innerHTML = '<option value="" disabled selected>Select Village</option><option value="v1">Village 1</option><option value="v2">Village 2</option>';
+      } else {
+        villageSelect.disabled = true;
+      }
+    });
+  </script>
+</div></main></body></html>
